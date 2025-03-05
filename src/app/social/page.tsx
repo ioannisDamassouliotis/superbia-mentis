@@ -25,7 +25,7 @@ const socialLinks = [
   },
   {
     name: "TikTok",
-    url: "https://tiktok.com/@superbiamentis",
+    url: "https://tiktok.com/@mentis",
     icon: (
       <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
         <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 5.2-2.32V9.39a8.16 8.16 0 0 0 4.77 1.52V7.3a6.31 6.31 0 0 1-3.77-1.61z"/>
