@@ -1,8 +1,43 @@
-import Image from "next/image";
+"use client";
+
+import Link from 'next/link';
+
+export default function Home() {
+  return (
+    <div className="h-screen w-full flex flex-col items-center justify-center" style={{ background: 'linear-gradient(135deg, #a865fa 0%, #75cfff 100%)' }}>
+      <div className="text-center p-10 border border-gray-700 rounded-2xl shadow-xl bg-gray-900 max-w-md">
+        <h1 className="text-4xl font-bold text-white mb-6">Welcome to Superbia Mentis</h1>
+        <p className="text-gray-300 mb-8">Your gateway to our amazing team and community.</p>
+        <div className="flex flex-col gap-4">
+          <Link 
+            href="/members" 
+            className="inline-block px-6 py-3 bg-purple-600 rounded-lg hover:bg-purple-700 transition text-white font-semibold"
+          >
+            Meet Our Team
+          </Link>
+          <Link 
+            href="/social" 
+            className="inline-block px-6 py-3 bg-white/10 backdrop-blur-sm rounded-lg hover:bg-white/20 transition text-white font-semibold border border-white/20"
+          >
+            Connect With Us
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/*import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      {/* Test section to verify Tailwind */ /*}
+      <div className="bg-blue-500 text-white p-4 rounded-lg shadow-lg hover:bg-blue-600 transition-colors">
+        <h1 className="text-2xl font-bold mb-2">Tailwind CSS Test</h1>
+        <p className="text-sm">If you see this styled correctly, Tailwind is working!</p>
+      </div>
+
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
@@ -99,3 +134,4 @@ export default function Home() {
     </div>
   );
 }
+*/
