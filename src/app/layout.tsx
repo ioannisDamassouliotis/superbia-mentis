@@ -9,6 +9,12 @@ const geistMono = GeistMono;
 export const metadata: Metadata = {
   title: "Superbia Mentis",
   description: "Superbia Mentis is a community of Gamers and Streamers",
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+    userScalable: false,
+  },
   icons: {
     icon: [
       { url: '/favicon/favicon.ico' },
@@ -29,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}>
         {children}
       </body>
     </html>

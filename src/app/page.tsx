@@ -4,8 +4,8 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="h-screen w-full flex flex-col items-center justify-center" style={{ background: 'linear-gradient(135deg, #a865fa 0%, #75cfff 100%)' }}>
-      <div className="text-center p-10 border border-gray-700 rounded-2xl shadow-xl bg-gray-900 max-w-md">
+    <div className="min-h-screen w-full flex flex-col items-center justify-center p-4" style={{ background: 'linear-gradient(135deg, #a865fa 0%, #75cfff 100%)' }}>
+      <div className="text-center p-6 sm:p-10 border border-gray-700 rounded-2xl shadow-xl bg-gray-900 max-w-md w-full">
         <h1 className="text-4xl font-bold text-white mb-6">Welcome to Superbia Mentis</h1>
         <p className="text-gray-300 mb-8">Your gateway to our amazing team and community.</p>
         <div className="flex flex-col gap-4">
